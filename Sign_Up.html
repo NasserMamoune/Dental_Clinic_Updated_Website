@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+        <!-- Main css file -->
+        <link rel="stylesheet" href="css/sign_up.css">
+     <!-- Font Awesome Library -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="logo" />
+            </a>
+            <nav>
+                <i class="fa-solid fa-bars toggle_menu"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about_us">About Us</a></li>
+                    <li><a href="#appointment">Appointment</a></li>
+                    <li><a href="#sign_up">Sign Up</a></li>
+                </ul>
+                <button>Login</button>
+            </nav>
+        </div>
+    </header>
+    <hr class="header_separator">
+    <section>
+        <div class="left">
+            
+            <form>
+                <h1>Sign<span>Up</span></h1>
+                <div class="input_colomn">
+                    <div class="input_group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" placeholder="Full name" required >
+                        <img class="icon1" src="images/profile (2).svg" alt="profile" />
+                    </div>
+                    <div class="input_group">
+                        <label>E-mail</label>
+                        <input type="email" name="email" placeholder="E-mail" required />
+                        <img class="icon2" src="images/email.svg" alt="email" />
+                    </div>
+                    <div class="input_group">
+                        <label>Password</label>
+                        <input type="password" name="password" placeholder="Password" required />
+                        <img class="icon3" src="images/password.svg" alt="password" />
+                    </div>
+                </div>
+                <div class="checkox_container">
+                    <input type="checkbox" name="checkbox" required>
+                    <p>Remember me</p>
+                </div>
+                <div class="input_group">
+                    <button>Sign Up</button>
+                </div>
+            </form>
+        </div>
+        <div class="right">
+            <img src="images/Dental_img.jpg" alt="deltal_home" />
+        </div>
+    </section>
+</body>
+</html>
