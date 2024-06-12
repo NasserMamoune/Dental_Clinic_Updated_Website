@@ -924,9 +924,6 @@ header button:hover {
     .patient_img {
         display: none;
     }
-    .left {
-        display: none;
-    }
     .input_raw {
         width: 85%;
         margin-left: auto;
