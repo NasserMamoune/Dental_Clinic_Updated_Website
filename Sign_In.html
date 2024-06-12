@@ -16,29 +16,37 @@
                 <img src="images/logo.png" alt="logo" />
             </a>
             <nav>
-                <i class="fa-solid fa-bars toggle_menu"></i>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about_us">About Us</a></li>
-                    <li><a href="#appointment">Appointment</a></li>
-                    <li><a href="#sign_up">Sign Up</a></li>
+                <ul class="side_bar">
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#516eff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a class="animation" href="index.html#home">Home</a></li>
+                    <li><a class="animation" href="index.html#services">Services</a></li>
+                    <li><a class="animation" href="index.html#about_us">About Us</a></li>
+                    <li><a class="animation" href="index.html#appointment">Appointment</a></li>
+                    <li><a class="animation" href="Sign_Up.html">Sign Up</a></li>
+                    <li><a class="animation" href="#">Login</a></li>
                 </ul>
-                <button>Login</button>
+                <ul class="menu">
+                    <li class="hideOnMobile"><a href="index.html#home">Home</a></li>
+                    <li class="hideOnMobile"><a href="index.html#services">Services</a></li>
+                    <li class="hideOnMobile"><a href="index.html#about_us">About Us</a></li>
+                    <li class="hideOnMobile"><a href="index.html#appointment">Appointment</a></li>
+                    <li class="hideOnMobile"><a href="Sign_Up.html">Sign Up</a></li>
+                    <li id="show" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#516eff"><path d="M120-240v-80h520v80H120Zm664-40L584-480l200-200 56 56-144 144 144 144-56 56ZM120-440v-80h400v80H120Zm0-200v-80h520v80H120Z"/></svg></a></li>
+                </ul>
+                <a href="Sign_In.html"><button>Login</button></a>
             </nav>
         </div>
     </header>
     <hr class="header_separator">
     <section>
         <div class="left">
-            
             <form>
                 <h1>Log<span>in</span></h1>
                 <div class="input_colomn">
                     <div class="input_group">
                         <label>E-mail</label>
                         <input type="email" name="email" placeholder="E-mail" required />
-                        <img class="icon2" src="images/email.svg" alt="email" />
+                        <img class="icon2" src="images/email.svg" alt="email"/>
                     </div>
                     <div class="input_group">
                         <label>Password</label>
@@ -47,10 +55,11 @@
                     </div>
                 </div>
                 <div class="checkox_container">
-                    <input type="checkbox" name="checkbox" required>
+                    <input type="checkbox" name="checkbox" required />
                     <p>Remember me</p>
                 </div>
                 <div class="input_group">
+                    <a href="#"></a>
                     <button>Login</button>
                 </div>
                 <div class="recover_contianer">
@@ -62,5 +71,6 @@
             <img src="images/Dental_img.jpg" alt="deltal_home" />
         </div>
     </section>
+    <script src="main.js"></script>
 </body>
 </html>
